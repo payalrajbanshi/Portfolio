@@ -88,7 +88,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/payalrajbanshi"
+              href="https://www.linkedin.com/in/payal-rajbanshi/"
               target="_blank"
               className="p-3 rounded-full bg-white/5 hover:bg-teal-400/20 transition"
             >
@@ -96,7 +96,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://facebook.com/payalrajbanshi"
+              href="https://www.facebook.com/payal.rajbansii/"
               target="_blank"
               className="p-3 rounded-full bg-white/5 hover:bg-teal-400/20 transition"
             >
