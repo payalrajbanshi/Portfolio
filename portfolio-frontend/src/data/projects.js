@@ -29,7 +29,7 @@ export const projects = [
     fullDescription:
     "A robust authentication system that supports user registration, email and mobile verification using PIN codes, secure password hashing with BCrypt, password reset functionality , and role-based user management. Built with clean architecture principles and service-based design for scalability and maintainability.",
     tech: ["Asp.Net Core", "React", "SQL Server", "Syncfusion UI"],
-    github: "https://github.com/payalrajbanshi/authVerification",
+    github: "https://github.com/payalrajbanshi/Auth-Verification-System",
     image:AuthLogin,
 
   }
