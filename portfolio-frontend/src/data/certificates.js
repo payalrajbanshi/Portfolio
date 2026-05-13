@@ -1,7 +1,7 @@
 import WebImage from "../assets/webdesign.png";
 import InternCertificate from "../assets/Internship.jpeg";
 import PythonDjango from "../assets/PythonDjango.jpeg";
-import MlPython from "../assets/MlPython.jpeg";
+import MlPython from "../assets/MLPython.jpeg";
 import Hackathon from "../assets/Hackathon.jpeg";
 export const certificates = {
   experience: [
