@@ -12,8 +12,6 @@ const techs = [
 const TechStack = () => {
   return (
     <section id="techstack" className="px-6 py-20">
-
-      {/* TITLE */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-teal-400">
           Tech Stack
@@ -33,13 +31,11 @@ const TechStack = () => {
             <div
               key={i}
               className="group flex items-center gap-4 p-5 rounded-2xl 
-                         bg-white/5 border border-white/10 
-                         hover:scale-105 hover:border-teal-400/40
-                         transition duration-300"
+bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10"
             >
               <Icon size={30} style={{ color: tech.color }} />
 
-              <span className="text-gray-200 group-hover:text-white">
+              <span className="text-gray-700 dark:text-gray-200 group-hover:text-black dark:group-hover:text-white">
                 {tech.name}
               </span>
             </div>

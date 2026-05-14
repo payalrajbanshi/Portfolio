@@ -18,8 +18,7 @@ const Projects = () => {
         {projects.map((p) => (
           <div
             key={p.id}
-            className=" hover:scale-105 hover:-translate-y-2 transition duration-300 bg-white/5 border border-white/10 rounded-2xl overflow-hidden 
-                       hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+            className="hover:scale-105 hover:-translate-y-2 transition duration-300 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden"
           >
            
             <div className="relative h-64">
@@ -38,7 +37,9 @@ const Projects = () => {
             </div>
 
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+  {p.title}
+</h3>
 
               <p className="text-gray-400 text-sm mb-4">
                 {p.shortDescription}

@@ -12,12 +12,12 @@ const Section = ({ title, items }) => (
   viewport={{ once: true }}
   transition={{ duration: 0.4, delay: i * 0.1 }}
   whileHover={{ scale: 1.02 }}
-        className="flex justify-between items-center bg-white/5 border border-white/10 
+        className="flex justify-between items-center bg-white dark:bg-white/5 border border-gray-200 border-white/10 
                    px-6 py-4 rounded-xl hover:shadow-lg transition"
       >
        
         <div>
-          <h4 className="font-medium">{c.title}</h4>
+          <h4 className="font-medium text-gray-900 dark:text-white">{c.title}</h4>
           <p className="text-sm text-gray-400">
             {c.org} • {c.date}
           </p>

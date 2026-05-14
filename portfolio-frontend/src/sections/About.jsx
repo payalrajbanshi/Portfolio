@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="min-h-screen px-6 py-20 flex flex-col items-center justify-center"
     >
-      {/* TEXT SECTION */}
+    
       <motion.div
       initial={{opacity:0, y:40}}
       whileInView={{opacity:1, y:0}}
@@ -18,7 +18,7 @@ const About = () => {
           About Me
         </h2>
 
-        <p className="text-gray-400 leading-relaxed">
+        <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
            Hi, I’m a recent CSIT graduate and a .NET and React developer who enjoys turning ideas into clean,
   functional, and user-friendly web applications. I build applications using ASP.NET Core on the backend,
   React on the frontend, Tailwind CSS for styling, and SQL Server for efficient data management.
@@ -30,7 +30,6 @@ const About = () => {
         </p>
       </motion.div>
 
-      {/* CARDS SECTION */}
       <motion.div
       initial="hidden"
       whileInView="visible"
@@ -45,16 +44,15 @@ const About = () => {
       }}
        className="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
 
-        {/* CARD 1 */}
         <motion.div
         variants={{
           hidden: {opacity:0, y:30},
           visible: {opacity:1, y:0},
         }}
         transition={{duration:0.5}}
-         className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+         className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 shadow-md dark:shadow-none hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
           
-          <Monitor 
+          <Monitor   
             className="mx-auto mb-4 text-teal-400 transition transform hover:scale-110" 
             size={42} 
           />
@@ -69,14 +67,13 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* CARD 2 */}
         <motion.div
                 variants={{
           hidden: {opacity:0, y:30},
           visible: {opacity:1, y:0},
         }}
         transition={{duration:0.5}} 
-        className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+        className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 shadow-md dark:shadow-none hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
           
           <Server 
             className="mx-auto mb-4 text-teal-400 transition transform hover:scale-110" 
@@ -93,14 +90,13 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* CARD 3 */}
         <motion.div
                 variants={{
           hidden: {opacity:0, y:30},
           visible: {opacity:1, y:0},
         }}
         transition={{duration:0.5}}
-         className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
+         className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 shadow-md dark:shadow-none hover:-translate-y-2 hover:shadow-xl transition duration-300 text-center">
           
           <Gauge 
             className="mx-auto mb-4 text-teal-400 transition transform hover:scale-110" 

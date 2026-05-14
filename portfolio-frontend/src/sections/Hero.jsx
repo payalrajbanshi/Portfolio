@@ -3,18 +3,18 @@ import {motion} from "framer-motion";
 const Hero = () => {
   return (
     <section
-      id="home"
-      className="min-h-screen flex items-center px-10 pt-24"
-    >
+  id="home"
+  className="min-h-screen flex items-center px-10 pt-24 bg-white dark:bg-[#020617]"
+>
       <div className="grid md:grid-cols-2 gap-10 items-center w-full">
 
-        {/* LEFT */}
+       
         <motion.div
         initial={{ opacity: 0, x:-50}}
         animate={{opacity:1, x:0}}
         transition={{duration:0.8}}
          className="space-y-6">
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
               Payal Rajbanshi
@@ -42,7 +42,6 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* RIGHT */}
         <motion.div
         initial={{opacity:0, x:50, scale:0.9}}
         animate={{opacity:1, x:0, scale:1}}

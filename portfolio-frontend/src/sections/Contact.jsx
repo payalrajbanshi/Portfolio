@@ -60,7 +60,7 @@ const Contact = () => {
           </p>
 
           
-          <div className="space-y-4 text-gray-300">
+          <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <div className="flex items-center gap-3">
               <Mail className="text-teal-400" size={20} />
               <span>payalrajbansi8@gmail.com</span>
@@ -77,7 +77,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* SOCIAL ICONS */}
+        
           <div className="flex gap-4 pt-4">
             <a
               href="https://github.com/payalrajbanshi"
@@ -107,21 +107,21 @@ const Contact = () => {
 
         {/* 🔥 RIGHT SIDE (FORM) */}
         <div className="p-[1px] rounded-2xl bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
-          <div className="bg-[#020617]/90 p-8 rounded-2xl backdrop-blur-xl">
+          <div className="bg-white dark:bg-[#020617]/90 p-8 rounded-2xl backdrop-blur-xl">
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
               name="name"
               value={form.name}
               onChange={handleChange}
                 placeholder="Name"
-                className="w-full p-3 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-teal-400"
+                className="w-full p-3 rounded-lg bg-white dark:bg-white/5 text-gray-900 dark:text-white border border-gray-300 dark:border-white/10 focus:outline-none focus:border-teal-400"
               />
               <input
               name="email"
               value={form.email}
               onChange={handleChange}
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-teal-400"
+                className="w-full p-3 rounded-lg bg-white dark:bg-white/5 text-gray-900 dark:text-white border border-gray-300 dark:border-white/10 focus:outline-none focus:border-teal-400"
               />
               <textarea
               name="message"
@@ -129,7 +129,7 @@ const Contact = () => {
               onChange={handleChange}
                 placeholder="Message"
                 rows="4"
-                className="w-full p-3 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-teal-400"
+                className="w-full p-3 rounded-lg bg-white dark:bg-white/5 text-gray-900 dark:text-white border border-gray-300 dark:border-white/10 focus:outline-none focus:border-teal-400"
               />
               <button type="submit" className="w-full bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3 rounded-lg text-black font-semibold hover:opacity-90 transition">
                 Send Message

@@ -24,11 +24,13 @@ const COLORS = ["#14b8a6", "#3b82f6", "#8b5cf6", "#ec4899"];
 
 const ChartCard = ({ title, children, description }) => (
   <div className="w-full max-w-5xl mb-16">
-    <h3 className="text-xl mb-4 text-white">{title}</h3>
+    <h3 className="text-xl mb-4 text-gray-900 dark:text-white">
+  {title}
+</h3>
 
     {/* Gradient border */}
     <div className="p-[1px] rounded-2xl bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
-      <div className="bg-[#020617]/90 backdrop-blur-xl p-6 rounded-2xl">
+      <div className="bg-white dark:bg-[#020617]/90 backdrop-blur-xl p-6 rounded-2xl">
         {children}
       </div>
     </div>
@@ -41,7 +43,7 @@ const Skills = () => {
   return (
     <section className="px-6 py-20 min-h-screen flex flex-col items-center">
       
-      {/* TITLE */}
+      
       <h2 className="text-4xl font-bold text-teal-400 mb-16">
         Skills & Analytics
       </h2>
@@ -124,7 +126,6 @@ const Skills = () => {
         </div>
       </ChartCard>
 
-      {/* 🔥 PIE */}
       <ChartCard
         title="Project Distribution"
         description="My work is balanced between frontend and full-stack development, with some backend focus."
@@ -151,7 +152,6 @@ const Skills = () => {
 </div>
 
 
-      {/* 🔥 SKILL BARS */}
       <div className="w-full max-w-2xl">
         <h3 className="text-xl mb-4">Skill Proficiency</h3>
 
